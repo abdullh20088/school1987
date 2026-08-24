@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>إعدادية العامرية المهنية - المكتبة الرقمية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>إعدادية العامرية المهنية</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">الرئيسية</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">عن المدرسة</a></li>
+                <li class="nav-item"><a href="#departments" class="nav-link">الأقسام</a></li>
+                <li class="nav-item"><a href="#library" class="nav-link">المكتبة</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي (خلفية سلايدر - بدون أزرار) -->
+    <section id="home" class="hero">
+        <!-- السلايدر كخلفية -->
+        <div class="simple-slider" id="hero-slider">
+            <!-- شريحة صورة 1 -->
+            <div class="slide active" data-type="image">
+                <div class="slide-media">
+                    <img src="media/images/7.jpg" alt="مبنى المدرسة" loading="lazy"
+                         onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                    <div class="slide-overlay"></div>
+                </div>
+            </div>
+            <!-- شريحة صورة 2 -->
+            <div class="slide" data-type="image">
+                <div class="slide-media">
+                    <img src="media/images/2.jpg" alt="المعامل" loading="lazy"
+                         onerror="this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                    <div class="slide-overlay"></div>
+                </div>
+            </div>
+            <!-- شريحة صورة 3 -->
+            <div class="slide" data-type="image">
+                <div class="slide-media">
+                    <img src="media/images/3.jpg" alt="الطلاب" loading="lazy"
+                         onerror="this.src='https://images.unsplash.com/photo-1524178234883-043d5c3f3cf4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                    <div class="slide-overlay"></div>
+                </div>
+            </div>
+            <!-- النقاط فقط (تم حذف أزرار التنقل) -->
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title animate-fade-up">
+                        <span class="title-line">إعدادية</span>
+                        <span class="title-line highlight">العامرية المهنية</span>
+                    </h1>
+                    <p class="hero-subtitle animate-fade-up">نحو مستقبل صناعي متطور</p>
+                    <p class="hero-description animate-fade-up">مدرسة حكومية رائدة تهدف إلى إعداد جيل من التقنيين والمهنيين المؤهلين في ثلاث التخصصات الصناعية.</p>
+                </div>
+
+                <div class="hero-buttons animate-fade-up">
+                    <button class="cta-button primary" id="btn-about">
+                        <i class="fas fa-info-circle"></i> تعرف علينا
+                    </button>
+                    <button class="cta-button secondary" id="btn-library">
+                        <i class="fas fa-book-open"></i> المكتبة الرقمية
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم عن المدرسة -->
+    <section id="about" class="about-school">
+        <div class="container">
+            <h2 class="section-title">عن المدرسة</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        مدرسة حكومية رائدة تهدف إلى إعداد جيل من التقنيين والمهنيين المؤهلين في التخصصات الصناعية وهي اتصالات وتجميع الحاسوب والأجهزة الطبية.
+                    </p>
+                    <p>
+                        تضم المدرسة مجموعة من الأقسام التخصصية التي تواكب متطلبات سوق العمل وتزود الطلاب بالمهارات العملية والمعرفة العلمية اللازمة للتميز في مجالاتهم.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div><h4>كفاءات مهنية</h4><p>إعداد تقنيين مؤهلين</p></div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-tools"></i></div>
+                            <div><h4>تدريب عملي</h4><p>معامل وورش متخصصة</p></div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-book"></i></div>
+                            <div><h4>مناهج متطورة</h4><p>مواكبة لسوق العمل</p></div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                            <div><h4>شراكات صناعية</h4><p>ربط التعليم بالصناعة</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- سلايدر "عن المدرسة" (مع فيديو) -->
+                    <div class="simple-slider" id="about-slider">
+                        <!-- شريحة صورة 1 -->
+                        <div class="slide active" data-type="image">
+                            <div class="slide-media">
+                                <img src="media/images/1.jpg" alt="مبنى المدرسة" loading="lazy"
+                                     onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                            </div>
+                        </div>
+                        <!-- شريحة صورة 2 -->
+                        <div class="slide" data-type="image">
+                            <div class="slide-media">
+                                <img src="media/images/2.jpg" alt="المعامل" loading="lazy"
+                                     onerror="this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                            </div>
+                        </div>
+                        <!-- شريحة صورة 3 -->
+                        <div class="slide" data-type="image">
+                            <div class="slide-media">
+                                <img src="media/images/3.jpg" alt="الطلاب" loading="lazy"
+                                     onerror="this.src='https://images.unsplash.com/photo-1524178234883-043d5c3f3cf4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                            </div>
+                        </div>
+                        <!-- شريحة فيديو -->
+                        <div class="slide" data-type="video">
+                            <div class="slide-media">
+                                <video id="about-video" muted loop playsinline>
+                                    <source src="media/videos/school-video.mp4" type="video/mp4">
+                                    <source src="media/videos/school-video.webm" type="video/webm">
+                                </video>
+                                <div class="slide-overlay"></div>
+                                <button class="video-control-btn" id="aboutVideoControl" aria-label="تشغيل/إيقاف الفيديو">
+                                    <i class="fas fa-pause"></i>
+                                </button>
+                            </div>
+                            <div class="slide-content">
+                                <h3><i class="fas fa-video"></i> جولة بالفيديو</h3>
+                                <p>شاهد مرافق المدرسة في هذا الفيديو التعريفي</p>
+                            </div>
+                        </div>
+                        <!-- أزرار التنقل -->
+                        <button class="slider-btn prev-btn"><i class="fas fa-chevron-right"></i></button>
+                        <button class="slider-btn next-btn"><i class="fas fa-chevron-left"></i></button>
+                        <div class="slider-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                            <span class="dot" data-index="3"></span>
+                        </div>
+                    </div>
+                    <!-- معلومات الاتصال -->
+                    <div class="contact-box">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span dir="ltr">+964 770 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>alamiriya1987@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأقسام -->
+    <section id="departments" class="departments">
+        <div class="container">
+            <h2 class="section-title">أقسام المدرسة</h2>
+            <div class="departments-triangle">
+                <div class="department-card top-right" data-department="computer-assembly">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>قسم تجميع الحاسوب</h3>
+                    <p>تخصص في تجميع وصيانة الحواسيب</p>
+                    <button class="card-button">استعرض الكتب</button>
+                </div>
+                <div class="department-card top-left" data-department="medical-devices">
+                    <div class="card-icon"><i class="fas fa-stethoscope"></i></div>
+                    <h3>قسم الأجهزة الطبية</h3>
+                    <p>تخصص في صيانة الأجهزة الطبية</p>
+                    <button class="card-button">استعرض الكتب</button>
+                </div>
+                <div class="department-card bottom-center" data-department="communications">
+                    <div class="card-icon"><i class="fas fa-broadcast-tower"></i></div>
+                    <h3>قسم اتصالات</h3>
+                    <p>تخصص في نظم الاتصالات والشبكات</p>
+                    <button class="card-button">استعرض الكتب</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المكتبة -->
+    <section id="library" class="library">
+        <div class="container">
+            <h2 class="section-title">المكتبة الرقمية</h2>
+            <div class="library-controls">
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="ابحث عن كتاب أو موضوع...">
+                        <button id="searchButton"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="filters-container">
+                    <div class="library-categories">
+                        <div class="category-card active" data-category="all">
+                            <div class="category-icon"><i class="fas fa-book-open"></i></div>
+                            <h3>جميع الكتب</h3>
+                        </div>
+                        <div class="category-card" data-category="اتصالات">
+                            <div class="category-icon"><i class="fas fa-broadcast-tower"></i></div>
+                            <h3>اتصالات</h3>
+                        </div>
+                        <div class="category-card" data-category="تجميع">
+                            <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
+                            <h3>تجميع</h3>
+                        </div>
+                        <div class="category-card" data-category="أجهزة-طبية">
+                            <div class="category-icon"><i class="fas fa-stethoscope"></i></div>
+                            <h3>أجهزة طبية</h3>
+                        </div>
+                    </div>
+                    <div class="study-levels-container">
+                        <div class="level-dropdown">
+                            <button class="level-dropbtn">
+                                <span>جميع المراحل</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="level-dropdown-content">
+                                <a href="#" data-level="all">جميع المراحل</a>
+                                <a href="#" data-level="الأول">المرحلة الأولى</a>
+                                <a href="#" data-level="الثاني">المرحلة الثانية</a>
+                                <a href="#" data-level="الثالث">المرحلة الثالثة</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="department-details">
+                <div class="details-header">
+                    <h3 id="departmentName">جميع الكتب</h3>
+                    <p id="departmentDescription">استعرض جميع الكتب المتاحة في مكتبة المدرسة</p>
+                    <div class="results-count"><span id="resultsCount">0</span> كتاب</div>
+                </div>
+                <div class="books-grid" id="booksGrid"></div>
+                <div class="load-more-container" id="loadMoreContainer">
+                    <button class="load-more-button" id="loadMoreButton">
+                        <i class="fas fa-chevron-down"></i> عرض المزيد
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>إعدادية العامرية المهنية</h3>
+                    <p>نحو مستقبل صناعي وتقني متطور</p>
+                    <div class="footer-contact">
+                        <a href="https://www.facebook.com/profile.php?id=100063919875797" target="_blank" class="footer-link">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>صفحتنا على فيسبوك</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">عن المدرسة</a></li>
+                        <li><a href="#departments">الأقسام</a></li>
+                        <li><a href="#library">المكتبة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>تابعنا على</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100063919875797" class="social-icon" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-contact-info">
+                <p><i class="fas fa-phone"></i> <span dir="ltr">+964 770 123 4567</span></p>
+                <p><i class="fas fa-envelope"></i> alamiriya1987@gmail.com</p>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة &copy; إعدادية العامرية المهنية 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
